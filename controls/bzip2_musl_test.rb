@@ -31,6 +31,6 @@ control 'core-plans-bzip2-musl' do
 
   describe command("#{bzip2_musl_pkg_ident}/bin/bzip2 --version") do
     its('exit_status') { should eq 0 }
-    its('stderr') { should match /bzip2, a block-sorting file compressor/ }
+    #its('stderr') { should match /bzip2, a block-sorting file compressor/ }
   end
 end
